@@ -60,6 +60,7 @@ p {
 	text-align: center;
 	text-decoration: none;
 	color: black;
+	z-index: 20;
 		&:hover{
 			background: linear-gradient(black 0%, black 100%);
 			background-size: 2px 2px;
@@ -85,6 +86,7 @@ a {
 	text-align: center;
 	text-decoration: none;
 	color: black;
+	z-index: 20;
 		&:hover {
 			background: linear-gradient(black 0%, black 100%);
 			background-size: 2px 2px;
@@ -98,6 +100,7 @@ a {
 	position: fixed;
 	left: 35px;
 	top: 30px;
+	z-index: 20;
 }
 
 header {
@@ -214,10 +217,6 @@ header {
 	opacity: 1;
 }
 
-.fadeOut {
-	//opacity: 0;
-}
-
 .whiteText {
 	color: white;
 }
@@ -263,8 +262,6 @@ header {
 	background-position: center center;
 	background-repeat: no-repeat;
 	h2 {
-		// color: white;
-		// text-shadow: 0 2px 30px rgba(0,0,0,1);
 		padding-bottom: 20px;
 	}
 }
@@ -302,7 +299,7 @@ footer {
 }
 
 
-// begin style for feast
+// begin style for portfolio pieces
 
 header#feast {
 	background-color: #4D2217;
@@ -494,12 +491,6 @@ header#f451 {
 	height: 100%;
 	padding: 0;
 	margin-top: 50px;
-	h2 a {
-		// visibility: hidden;
-	}
-	p {
-		// padding-top: 200px;
-	}
 }
 
 .worksLeft, .worksRight {
@@ -604,4 +595,21 @@ footer {
     width: 100%;
     border: none;
 }
+}
+
+@media (max-width:450px){	
+h2 {
+	font-size: 2rem;
+	line-height: 2.2rem;
+}
+}
+@media (max-width:350px){
+.emailMe p {
+    position: relative;
+    left: -20px;
+    i {
+    	display: none;
+    }
+}
+    
 }

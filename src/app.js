@@ -2,6 +2,21 @@ console.log("Hey, It's Rennie");
 
 $(function() {
 
+$.preloadImages = function() {
+  for (var i = 0; i < arguments.length; i++) {
+    $("<img />").attr("src", arguments[i]);
+  }
+}
+
+$.preloadImages("../../images/feast/feast-hover_2x.jpg",
+	    "../../images/drinksavvy/drinksavvy-hover_2x.png",
+ 		"url(../../images/luxebox/luxebox-hover_2x.png",
+ 		"url(../../images/fudster/fudster-hover_2x.png",
+		"../../images/bookshare/bookshare-hover_2x.png",
+		"../../images/ook/ook-hover_2x.jpg",
+		"../../images/f451/f451-hover_2x.jpg",
+ 		"../../images/pommies/pommies-hover_2x.jpg");
+
 	$('a[href*="#"]:not([href="#"])').click(function() {
 	      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
 	        var target = $(this.hash);
